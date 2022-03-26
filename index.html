@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /*css reset*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /*css variables*/
+        :root{
+            --navbar-height:59px;
+        }
+
+        /*navbar*/
+        #navbar{
+            display: flex;
+            align-items: center;
+            
+        }
+        #navbar{
+            position: relative;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+
+        /* logo and image */
+        #logo{
+            margin: 10px 4px;
+        }
+        #logo img{
+           width: 50px;
+            height: 50px;
+            margin: 13px 24px;
+        }
+
+
+
+        /* list styling :nav bar*/
+        #navbar ul{
+            display: flex;
+        }
+        
+        #navbar ul li{
+            color: white ;
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a{
+           display: block;
+           padding: 3px 22px;
+           border-radius: 20px;
+           text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+
+
+
+        /* home section  */
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 650px;
+        }
+        #home::before{
+            content: "";
+            background: url('sketches/sketch1613304842307.png') center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            
+        }
+        #home h1{
+            color: black;
+            text-align: center;
+        }
+        #home p{
+            color: orangered;
+            text-align: center;
+            font-family: fantasy;
+        }
+        
+        
+        /*services section*/
+        .services-container{
+            border: 2px solid cadetblue;
+            border-radius: 20px;
+            margin: 3px;
+        }   
+        #services{
+            margin: 34px;
+            display: flex;
+        }
+        #services .box{
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 10px 10px;
+            border-radius: 23px;
+            background-color: palegreen;
+
+            
+        }
+        #services .box img{
+            height: 160px;
+            display: block;
+            margin: auto;
+
+        }
+
+
+
+        /* utility class */
+        .h-prime{
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+        .h-second{
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color:brown;
+            color: white;
+            margin: 17px ;
+            font-size: 1.3rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .center{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="sketches/sketch1613747592531 (2).png" alt="site" >
+
+        </div>
+
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">Services</a></li>
+            <li class="item"><a href="">About us</a></li>
+            <li class="item"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h1 class="h-prime">Welcome to My Website</h1>
+        <p> doloremque tempore ipsa at fugiat rerum eaque repudiandae quos, totam, excepturi quibusdam est velit repellendus voluptates, enim qui voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora ipsum doloremque tempore ipsa at fugiat rerum eaque repudiandae</p>
+
+        <button class="btn">ORDER NOW</button>
+    </section>
+
+
+    <section class="services-container">
+        <h1 class="h-prime center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="sketches/sketch1613747592531 (2).png" alt="">
+                <h2 class="h-second center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam neque eos assumenda, asperiores praesentium laborum, molestiae nemo architecto optio eveniet quod facilis et? Tenetur sequi omnis est totam necessitatibus. Exercitationem.</p>
+            </div>
+            <div class="box">
+                <img src="sketches/sketch1613747592531 (2).png" alt="">
+                <h2 class="h-second center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam neque eos assumenda, asperiores praesentium laborum, molestiae nemo architecto optio eveniet quod facilis et? Tenetur sequi omnis est totam necessitatibus. Exercitationem.</p>
+            </div>
+            <div class="box">
+                <img src="sketches/sketch1613747592531 (2).png" alt="">
+                <h2 class="h-second center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam neque eos assumenda, asperiores praesentium laborum, molestiae nemo architecto optio eveniet quod facilis et? Tenetur sequi omnis est totam necessitatibus. Exercitationem.</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
